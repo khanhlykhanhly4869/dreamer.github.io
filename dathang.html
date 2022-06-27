@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Dream - Cake & Tea</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+       
+      
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .page-header.mb-0{
+                background-image: url(https://i.pinimg.com/564x/67/a9/00/67a90088fefdf14ad6d47ec0713e35bd.jpg);
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="trangchu.html" class="navbar-brand">Dream <span>Cake&Tea</span></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="trangchu.html" class="nav-item nav-link active">Trang chủ</a>
+                        <a href="gioithieu.html" class="nav-item nav-link">Giới thiệu</a>
+                        <a href="thucdon.html" class="nav-item nav-link">Thực đơn</a>
+                        <a href="dathang.html" class="nav-item nav-link">Đặt hàng</a>  
+                        <a href="lienhe.html" class="nav-item nav-link">Liên hệ</a>
+                        <a href="dangky.html" class="nav-item nav-link">Đăng kí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+        
+        <!-- Page Header Start -->
+        <div class="page-header mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>ĐẶT BÀN</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="">Cake</a>
+                        <a href="">Tea</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+
+        <!-- Booking Start -->
+        <div class="booking">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="booking-content">
+                            <div class="section-header">
+                                <p>Đặt hàng</p>
+                                <h2>Dream - Mang đến món ngon cho bạn ở mọi vũ trụ</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Chọn một món ngon để hưởng trọn vẹn ngày hôm nay của bạn nào !
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="booking-form">
+                            <form onsubmit="signup()">
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input id="username" type="text" class="form-control" placeholder="HỌ VÀ TÊN" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-user"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input id="phone" type="text" class="form-control" placeholder="ĐIỆN THOẠI" pattern="^(0[234][0-9]{8}|1[89]00[0-9]{4})$" required="required" />
+                                        <div class="input-group-append">
+                                            <div class="input-group-text"><i class="fa fa-mobile-alt"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group date" id="NGÀY" data-target-input="nearest">
+                                        <input type="date" min="2019-01-01" max="2050-12-31" class="form-control datetimepicker-input" data-target="#date" data-toggle="datetimepicker"/>
+                                <div class="input-group-append" data-target="#date" data-toggle="datetimepicker">
+                                            <div class="input-group-text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group time" id="THỜI GIAN" data-target-input="nearest">
+                                        <input type="time" class="form-control datetimepicker-input" placeholder="THỜI GIAN" data-target="#time" data-toggle="datetimepicker"/>
+                                        <div class="input-group-append" data-target="#time" data-toggle="datetimepicker">
+                                            <div class="input-group-text"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="input-group">
+                                        <input id=number type="text" class="form-control" placeholder="SỐ LƯỢNG" required="required" />
+<div class="input-group-append">
+                                            <div class="input-group-text"><i class="far fa-user"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn custom-btn" type="submit">Đặt ngay bây giờ</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking End -->
+        
+        
+        <!-- Menu Start -->
+        <div class="menu">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Thực đơn</p>
+                    <h2>Dream - Menu</h2>
+                </div>
+                <div class="menu-tab">
+                    <ul class="nav nav-pills justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#burgers">Bánh ngọt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#snacks">Bánh mặn</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#beverages">Trà</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="burgers" class="container tab-pane active">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/0f/fb/8b/0ffb8b6e0351c5b4e629f0114482c0c4.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Mango Tiramisu</span> <strong>40.000 VND</strong></h3>
+                                            <p>Bánh tiramisu được xem là "linh hồn" trong thế giới bánh ngọt của người Ý.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/23/4c/d6/234cd684364fd7926116d63cb5a69c19.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Cheesecake</span> <strong>60.000 VND</strong></h3>
+                                            <p>Một điều thú vị của chiếc bánh này là do một nhà vật lý làm ra.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/cc/93/1c/cc931cab9c0956ae20d1ce7db7f360d5.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Macaron</span> <strong>20.000 VND</strong></h3>
+                                            <p>Macaron tiếng Ý có nghĩa là mềm mại, nghiền nát, đúng như ngoại hình bánh rất mềm và mịn.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/fc/13/4a/fc134a508fb46efcfce5554fcdd2f374.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Mochi</span> <strong>50.000 VND</strong></h3>
+                                            <p>Bánh không dùng chỉ để ăn mà còn là vật phẩm may mắn của người Nhật.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/12/ce/49/12ce493412dcc77b0253807a3781f733.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pavlova</span> <strong>60.000 VND</strong></h3>
+                                            <p>Pavlova – Câu chuyện về chiếc bánh nhẹ như mây</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="https://i.pinimg.com/564x/a7/3c/30/a73c307d25a271f2eb3789119098fb60.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="snacks" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/44/5c/d0/445cd0cd2d323ea432a5c0ec8cc4cbcb.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Sandwitch phô mai</span> <strong>35.000 VND</strong></h3>
+                                            <p>Sandwitch là món bánh ngon giòn còn thêm một lớp phô mai kéo sợi nữa, còn chi bằng.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/fb/df/bc/fbdfbc4a08de659c82f621dd68c42728.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Sandwith trứng + salad</span> <strong>45.000 VND</strong></h3>
+                                            <p>Sandwith đã thơm ngon đầy hương vị còn kết hợp thêm trứng nóng hổi và kèm một rau salad nữa.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/e3/29/2d/e3292da3d99634837c228d8022bed764.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Bông lan trứng muối</span> <strong>50.000 VND</strong></h3>
+                                            <p>Một món ăn quá quen thuộc với dân sành ăn, ai fan thì order ngay nào.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/61/ed/c9/61edc9a5efd524203902e7dbb3b5ff70.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Pizza</span> <strong>75.00 VND</strong></h3>
+                                            <p>Một mẻ bánh nóng hổi, chia 5 sẻ 7 ăn cùng người thương thì còn gì bằng nhỉ?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="https://i.pinimg.com/564x/5b/7b/1a/5b7b1ad54d8f1bc492de48e8c0804d7a.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="beverages" class="container tab-pane fade">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-12">
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/de/d2/62/ded2625574881447ce433b538bc2ea3f.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Trà hoa đậu biếc</span> <strong>25.000 VND</strong></h3>
+                                            <p>Một màu tím tím nhẹ nhẹ giúp bạn giải tỏa căng thằng.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/79/05/ae/7905ae0945bbdb2d4ae5b9bf7b9f4829.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Trà dâu </span> <strong>25.000VND</strong></h3>
+                                            <p>Dâu ngọt ngọt kèm một chút nước nóng, bạn sẽ thấy cuộc sống bạn đang hồng trở lại đấy.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/c1/dc/e0/c1dce06aba02fc68b812ed4cb2aa010c.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Trà chanh bạc hà</span> <strong>25.000 VND</strong></h3>
+                                            <p>Món uống được đánh gía cao tại quán bởi nó quen thuộc và nhanh gọn.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/0f/c4/c3/0fc4c32feaf110b98fe64aac49fdea29.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Trà Atiso đỏ</span> <strong>25.000 VND</strong></h3>
+                                            <p>Loại trà giúp chữa một số bệnh trong cơ thể.</p>
+                                        </div>
+                                    </div>
+                                    <div class="menu-item">
+                                        <div class="menu-img">
+                                            <img src="https://i.pinimg.com/564x/a1/8c/30/a18c3093237fec8fcf0b81a75d232cc1.jpg" alt="Image">
+                                        </div>
+                                        <div class="menu-text">
+                                            <h3><span>Trà vải</span> <strong>25.000 VND</strong></h3>
+                                            <p>Mùa vải đến thì món này sẽ hết sạch trong tích tắc, nhanh tay thưởng thức nào.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-block">
+                                    <img src="https://i.pinimg.com/564x/75/51/0e/75510e676813af62a31729e2fab857b1.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2>Thông tin liên hệ</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>470 Trần Đại Nghĩa, Hòa Hải, Ngũ Hành Sơn, Đà Nẵng</p>
+                                    <p><i class="fa fa-phone-alt"></i>0363.212.960/0835.717.711</p>
+                                    <p><i class="fa fa-envelope"></i>dreamer217@gmail.com</p>
+                                    <div class="footer-social">
+                                        <a href="https://www.facebook.com/profile.php?id=100011396298505"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/anel_1101/?hl=vi"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-newsletter">
+                            <h2>Phản hồi</h2>
+                            <p>
+                                
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Email">
+                                <button class="btn custom-btn">Gửi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
